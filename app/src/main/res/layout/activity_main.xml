@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="731dp"
+        android:layout_height="411dp"
+        android:background="#936E6E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/nobleb"
+        tools:src="@android:drawable/editbox_dropdown_dark_frame"
+        tools:srcCompat="@android:drawable/screen_background_dark_transparent" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="419dp"
+        android:layout_height="399dp"
+        android:clipToPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/a1"
+            android:layout_width="138dp"
+            android:layout_height="131dp"
+            android:adjustViewBounds="false"
+            android:onClick="toqueCasilla"
+            android:src="@drawable/casilla"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <ImageButton
+            android:id="@+id/a2"
+            android:layout_width="138dp"
+            android:layout_height="131dp"
+            android:onClick="toqueCasilla"
+            android:src="@drawable/casilla"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <ImageButton
+            android:id="@+id/a3"
+            android:layout_width="138dp"
+            android:layout_height="131dp"
+            android:onClick="toqueCasilla"
+            android:src="@drawable/casilla"
+            app:layout_column="2"
+            app:layout_row="0" />
+
+        <ImageButton
+            android:id="@+id/b1"
+            android:layout_width="138dp"
+            android:layout_height="131dp"
+            android:onClick="toqueCasilla"
+            android:src="@drawable/casilla"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <ImageButton
+            android:id="@+id/b2"
+            android:layout_width="138dp"
+            android:layout_height="131dp"
+            android:onClick="toqueCasilla"
+            android:src="@drawable/casilla"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <ImageButton
+            android:id="@+id/b3"
+            android:layout_width="138dp"
+            android:layout_height="131dp"
+            android:onClick="toqueCasilla"
+            android:src="@drawable/casilla"
+            app:layout_column="2"
+            app:layout_row="1" />
+
+        <ImageButton
+            android:id="@+id/c1"
+            android:layout_width="138dp"
+            android:layout_height="131dp"
+            android:onClick="toqueCasilla"
+            android:src="@drawable/casilla"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <ImageButton
+            android:id="@+id/c2"
+            android:layout_width="138dp"
+            android:layout_height="131dp"
+            android:onClick="toqueCasilla"
+            android:src="@drawable/casilla"
+            app:layout_column="1"
+            app:layout_row="2" />
+
+        <ImageButton
+            android:id="@+id/c3"
+            android:layout_width="138dp"
+            android:layout_height="131dp"
+            android:onClick="toqueCasilla"
+            android:src="@drawable/casilla"
+            app:layout_column="2"
+            app:layout_row="2" />
+    </androidx.gridlayout.widget.GridLayout>
+
+    <Button
+        android:id="@+id/unjugador"
+        android:layout_width="220dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="176dp"
+        android:background="@drawable/rounded_corner"
+        android:onClick="Jugar"
+        android:text="@string/jugar"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/grupoDificultad"
+        android:layout_width="94dp"
+        android:layout_height="113dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="52dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/unjugador"
+        app:layout_constraintVertical_bias="1.0">
+
+        <RadioButton
+            android:id="@+id/normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/normal"
+            android:textColor="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/dificil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dificil"
+            android:textColor="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/imposible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/extremo"
+            android:textColor="#FFFFFF" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/botonMostrarPartidas"
+        android:layout_width="121dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="68dp"
+        android:background="@drawable/rounded_corner"
+        android:onClick="Jugar"
+        android:text="@string/partidas"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/grupoDificultad" />
+
+    <Button
+        android:id="@+id/botonMostarRanking"
+        android:layout_width="119dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/rounded_corner"
+        android:text="@string/ranking"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/botonMostrarPartidas"
+        app:layout_constraintStart_toEndOf="@+id/grupoDificultad" />
+
+    <Button
+        android:id="@+id/btnNuevoUsuario"
+        android:layout_width="221dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_corner"
+        android:text="@string/new_user"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/gridLayout"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="223dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_corner"
+        android:text="@string/cancel"
+        android:textColor="#FFFFFF"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/gridLayout"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtNombre"
+        android:layout_width="132dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAceptar"
+        android:layout_width="72dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="184dp"
+        android:layout_marginLeft="184dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/rounded_corner"
+        android:text="@string/aceptar"
+        android:textColor="#FFFFFF"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="71dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/rounded_corner"
+        android:text="+"
+        android:textColor="#FFFFFF"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/edtNombre"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtNombre1"
+        android:layout_width="97dp"
+        android:layout_height="18dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="116dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtNombre2"
+        android:layout_width="98dp"
+        android:layout_height="17dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="156dp"
+        android:layout_marginLeft="156dp"
+        android:layout_marginTop="116dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/media"
+        android:layout_width="57dp"
+        android:layout_height="57dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/rounded_corner"
+        android:padding="20dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/speaker"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:src="@drawable/speaker" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

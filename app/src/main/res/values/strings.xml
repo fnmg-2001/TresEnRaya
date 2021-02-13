@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Tres en Raya</string>
+    <string name="new_user">Nuevo usuario</string>
+    <string name="cancel">Cancelar</string>
+    <string name="jugar">Jugar</string>
+    <string name="ranking">Ranking</string>
+    <string name="partidas">Partidas</string>
+    <string name="normal">Normal</string>
+    <string name="dificil">Dificil</string>
+    <string name="extremo">Extremo</string>
+    <string name="aceptar">Aceptar</string>
+</resources>
